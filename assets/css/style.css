@@ -474,7 +474,7 @@ body{
 }
 .ocultarProg{
     overflow: hidden;
-    height: 422px;
+    height: 420px;
 }
 .divvermas{
     display: flex;
@@ -895,7 +895,8 @@ footer{
         margin: 2em auto 0;
         height: calc(15vh + 60px);
         justify-content: initial;
-        padding: 15px;
+        padding: 25px;
+        box-sizing: border-box;
     }
     .home{
         width: 80%;
@@ -931,7 +932,7 @@ footer{
         gap: 1.2em;
     } 
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 350px) {
     .infoImportante{
         text-align: left;
     }
