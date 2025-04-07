@@ -137,8 +137,8 @@ body{
 .logoNavegacion{
     background:var(--color-blanco)  var(--img-logo);
     background-size: contain;
-    min-width: 23px;
-    min-height: 23px;
+    min-width: 27px;
+    min-height: 27px;
     width: 4vw;
     height: 4vw;
     max-width: 30px;
@@ -234,7 +234,7 @@ body{
     flex-direction: column;
     align-items: center;
     height: auto;
-    
+
 }
 .nombre{
     font-family: var(--font-nombre);
@@ -263,7 +263,7 @@ body{
     display: flex;
     width: 70%;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
     text-align: center;
     height: 3.5em;
     border: var(--border--targets);
@@ -274,7 +274,7 @@ body{
 .presentacion{
     width: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     height: 100%;
     gap: 5%;
     text-align: center;
@@ -309,7 +309,7 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 15px;
-    
+
 }
 .presentacionLink{
     display: flex;
@@ -345,10 +345,10 @@ body{
     padding: 20px 7%;
     box-sizing: border-box;
 }
-/* 
+/*
 .contenido:nth-child(odd){
     background: var(--color--background-resaltado);
-} 
+}
     */
 .parrafo{
     text-align: justify;
@@ -368,8 +368,8 @@ body{
     text-align: right;
 }
 .textContenedor{
-    width: 90%; 
-    margin: auto; 
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: .5em;
@@ -431,8 +431,8 @@ body{
     color: var(--color--texto);
 
 }
-.target:hover .targetsIcon, 
-.target:hover .targetsSubIcon, 
+.target:hover .targetsIcon,
+.target:hover .targetsSubIcon,
 .target:hover .targetsSubtitulo {
     transform: rotateY(90deg);
 }
@@ -656,7 +656,6 @@ footer{
     background: var(--color-azul-oscuro);
     gap: 15px;
     margin: 2em auto 0;
-
 }
 .footerTexto{
     color: var(--color-blanco);
@@ -666,7 +665,7 @@ footer{
     font-family:var(--font-courgette);
 }
 .textResaltado{
-    font-weight: bold;    
+    font-weight: bold;
     color: var(--color--targets);
 }
 .footerRedesRociales{
@@ -868,14 +867,15 @@ footer{
     }
     .navegacionLink:hover .navegacionSpan, .navegacionLink.mostrar .navegacionSpan{
         opacity: 1;
+        font-weight: bold;
     }
     .scroll .botonModoOscuro{
         display: initial;
-    }   
+    }
     .navegacionLink:hover .logoNavegacion, .navegacionLink.mostrar .logoNavegacion,
     .navegacionLink:hover .navegacionIcon, .navegacionLink.mostrar .navegacionIcon{
         border: 4px solid var(--color-azul-oscuro);
-        transform: translateY(-70%);    
+        transform: translateY(-80%);
     }
     .navegacionLi:hover .subNavegacionUl,
     .subNavegacionUl,
@@ -887,7 +887,7 @@ footer{
     .scroll .main{
         width: 100%;
         margin-left: auto;
-    
+
     }
     .scroll .footer,
     footer{
@@ -903,12 +903,12 @@ footer{
         flex-direction: column;
         gap: 30px;
         height: auto;
-        max-height: 100vh;
+        max-height: 130vh;
     }
     .informacion,
     .scroll .informacion{
         position: initial;
-        width: 100%;  
+        width: 100%;
     }
     .presentacion{
         height: 70%;
@@ -917,7 +917,7 @@ footer{
     .scroll .informacionSpan{
         width: 50%;
         font-size: initial;
-    
+
     }
     .scroll .nombre{
         color: var(--color-azul);
@@ -930,14 +930,35 @@ footer{
     .textContenedor,
     .formacionTarget{
         gap: 1.2em;
-    } 
+    }
+    .imgContacto{
+        min-width: auto;
+        width: 70%;
+    }
+    .footer{
+        min-height: 230px;
+    }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .infoImportante{
         text-align: left;
+    }
+    .formularioContacto{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 350px) {
+    .navegacionUl, .scroll .navegacionUl{
+        width: 100%;
     }
     .scroll .botonModoOscuro,
     .botonModoOscuro{
         display: none;
+    }
+    .navegacionLink:hover .navegacionSpan, 
+    .navegacionLink.mostrar .navegacionSpan{
+        opacity: 0;
     }
 }
